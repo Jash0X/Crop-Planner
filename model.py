@@ -6,18 +6,15 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.preprocessing import StandardScaler
 
-# Define necessary functions
 def preprocess_data(df):
-    # Convert columns with non-numeric data to numeric if possible
     for col in df.columns:
         try:
             df[col] = pd.to_numeric(df[col])
         except ValueError:
-            pass  # Ignore columns that cannot be converted
+            pass  
     
-    # Handle missing values
-    df.dropna(inplace=True)  # Drop rows with missing values
-
+    df.dropna(inplace=True)  
+    
 def read_in_and_split_data(data, target):
     X = data.drop(target, axis=1)
     y = data[target]
