@@ -18,7 +18,7 @@ def preprocess_data(df):
 def read_in_and_split_data(data, target):
     X = data.drop(target, axis=1)
     y = data[target]
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=40)
     return X_train, X_test, y_train, y_test
 
 def train_model(X_train, y_train):
