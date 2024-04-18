@@ -21,7 +21,7 @@ def main():
 
     st.write("""
     ### About:
-    By analyzing parameters such as nitrogen, phosphorous, potassium levels, temperature, humidity, pH, and rainfall, you will receive personalized recommendations for optimal crop selection, ultimately enhancing agricultural productivity and sustainability.
+    By analyzing parameters such as nitrogen, phosphorous, potassium levels, temperature, humidity, pH, and rainfall, you will receive personalized recommendations for optimal crop selection.
     """)
 
     st.write("""
